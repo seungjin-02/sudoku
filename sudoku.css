@@ -1,0 +1,88 @@
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 10px;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+h2 {
+  font-size: 2em;
+  margin-bottom: 5px;
+}
+
+p {
+  font-size: 1em;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 400px;
+}
+
+td {
+  border: 1px solid #aaa;
+  width: 11%;
+  height: 0;
+  padding-bottom: 11%;
+  position: relative;
+}
+
+td:nth-child(3), td:nth-child(6) { border-right: 3px solid black; }
+tr:nth-child(3) td, tr:nth-child(6) td { border-bottom: 3px solid black; }
+tr:first-child td { border-top: 3px solid black; }
+tr:last-child td { border-bottom: 3px solid black; }
+td:first-child { border-left: 3px solid black; }
+td:last-child { border-right: 3px solid black; }
+
+input {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 1.5em;
+  text-align: center;
+  border: none;
+  outline: none;
+  background-color: white;
+  box-sizing: border-box;
+}
+
+button {
+  margin: 5px 3px;
+  font-size: 1em;
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: 1px solid #444;
+  cursor: pointer;
+  background-color: #eee;
+  min-width: 80px;
+}
+
+button:hover {
+  background-color: #ddd;
+}
+
+select {
+  font-size: 1em;
+  padding: 6px 10px;
+  margin-bottom: 10px;
+  width: 150px;
+}
+
+/* 모바일 최적화 */
+@media (max-width: 500px) {
+  button, select {
+    width: 90%;
+    max-width: 300px;
+    margin: 5px 0;
+  }
+
+  h2 { font-size: 1.5em; }
+  p { font-size: 0.9em; }
+  input { font-size: 1.2em; }
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>Sudoku</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="sudoku.css">
+</head>
+<body>
+<h2>배포 연습용 스도쿠</h2>
+<select id="difficulty">
+  <option value="easy">쉬움</option>
+  <option value="medium" selected>보통</option>
+  <option value="hard">어려움</option>
+</select>
+<table id="grid"></table>
+<div class="buttons">
+  <button onclick="generatePuzzle()">랜덤 문제 생성</button>
+  <button onclick="giveHint()">힌트</button>
+<button onclick="checkAnswer()">정답 채점하기</button>
+  <button onclick="solve()">포기하고 정답 확인하기</button>
+</div>
+<script src="sudoku.js"></script>
+</body>
+</html>
